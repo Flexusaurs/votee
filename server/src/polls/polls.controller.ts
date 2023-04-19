@@ -19,5 +19,4 @@ export class PollsController{
         Logger.log('rejoining');
     }
     
-
 }

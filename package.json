@@ -1,0 +1,23 @@
+{
+  "name": "votee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client:dev": "npm run dev --workspace=client",
+    "server:dev": "npm run start:dev --workspace=server",
+    "start": "concurrently 'npm:docker:compose' 'npm:server:dev' 'npm:client:dev' ",
+    "stop": "docker-compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/config": "^2.3.1"
+  }
+}

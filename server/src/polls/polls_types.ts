@@ -1,3 +1,5 @@
+
+//add generics?
 export type CreatePollFields = {
   topic: string;
   votesPerVoter: number;

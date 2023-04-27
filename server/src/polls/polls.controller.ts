@@ -20,6 +20,7 @@ export class PollsController {
     return result;
   }
 
+  //add actual redis session token
   @Post('/rejoin')
   async rejoin() {
     const result = await this.pollsService.rejoinPoll({

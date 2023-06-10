@@ -13,12 +13,13 @@
     "server:dev": "wait-on tcp:6379 && npm run start:dev --workspace=server",
     "start": "concurrently 'npm:docker:compose' 'npm:server:dev'",
     "stop": "docker-compose down",
-    "docker:compose": "docker-compose up -d",
+    "docker:compose": "docker-compose up -d"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nestjs/config": "^2.3.1"
+    "@nestjs/config": "^2.3.1",
+    "concurrently": "^8.2.0"
   }
 }

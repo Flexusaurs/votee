@@ -6,6 +6,6 @@ export interface Poll{
     id: string;
     topic: string;
     votesPerVoter: number;
-    participanrs: Participants;
+    participants: Participants;
     adminID: string;
 }
